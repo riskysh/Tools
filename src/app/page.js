@@ -23,7 +23,7 @@ export default function Home() {
         <p className="text-gray-400 text-center text-1xl font-semibold mt-3">This project has a lot of tools that will help you</p>
         <div className="mx-auto grid justify-center gap-4 md:max-w-[64rem] md:grid-cols-3 sm:grid-cols-2 mt-10">
 
-        <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left">
+        <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left hover:border-[#414147] hover:duration-300">
           <div className="flex h-44 flex-col justify-between rounded-md p-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-left"><line x1="21" x2="3" y1="6" y2="6"/><line x1="15" x2="3" y1="12" y2="12"/><line x1="17" x2="3" y1="18" y2="18"/></svg>
               <div className="space-y-2 mt-2">
@@ -33,7 +33,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left">
+
+        <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left hover:border-[#414147] hover:duration-300">
           <div className="flex h-44 flex-col justify-between rounded-md p-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg>
               <div className="space-y-2 mt-2">
@@ -43,7 +44,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left">
+      <Link href="/todo">
+        <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left hover:border-[#414147] hover:duration-300">
           <div className="flex h-44 flex-col justify-between rounded-md p-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-check"><path d="M11 18H3"/><path d="m15 18 2 2 4-4"/><path d="M16 12H3"/><path d="M16 6H3"/></svg>
               <div className="space-y-2 mt-2">
@@ -52,6 +54,7 @@ export default function Home() {
               </div>
           </div>
         </div>
+        </Link>
 
         </div>
       </div>

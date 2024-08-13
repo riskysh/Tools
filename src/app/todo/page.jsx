@@ -1,5 +1,5 @@
 "use client"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TodoForm from './todo-form';
 import TodoList from './todo-list';
 import NavBar from '@/components/header';
@@ -29,13 +29,26 @@ export default function Todo() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"))
+
+    if (todos && todos.length > 0) {
+      setTodos(todos)
+    }
+
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
+
   return (
-    <div>
-        <NavBar />
+    <>
+      <NavBar />
       <h1 className='text-white text-6xl text-left ml-14 mt-40 font-extrabold'>Todo List</h1>
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
       <Footer />
-    </div>
+    </>
   );
 }
