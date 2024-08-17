@@ -23,6 +23,7 @@ export default function Home() {
         <p className="text-gray-400 text-center text-1xl font-semibold mt-3">This project has a lot of tools that will help you</p>
         <div className="mx-auto grid justify-center gap-4 md:max-w-[64rem] md:grid-cols-3 sm:grid-cols-2 mt-10">
 
+      <Link href="/password-generator">
         <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left hover:border-[#414147] hover:duration-300">
           <div className="flex h-44 flex-col justify-between rounded-md p-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-left"><line x1="21" x2="3" y1="6" y2="6"/><line x1="15" x2="3" y1="12" y2="12"/><line x1="17" x2="3" y1="18" y2="18"/></svg>
@@ -32,7 +33,7 @@ export default function Home() {
               </div>
           </div>
         </div>
-
+      </Link>
 
         <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left hover:border-[#414147] hover:duration-300">
           <div className="flex h-44 flex-col justify-between rounded-md p-6">

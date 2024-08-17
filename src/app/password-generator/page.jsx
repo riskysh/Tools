@@ -38,15 +38,16 @@ export default function PasswordGenerator() {
 
     }, [length, numAllowed, charAllowed, setPassword])
 
-    useEffect(() => {
-        passwordGenerator()
-    }, [length, numAllowed, charAllowed, passwordGenerator])
 
     const copyToClipboard = useCallback(() => {
         passwordRef.current?.select()
         passwordRef.current?.setSelectionRange(0, 99)
         window.navigator.clipboard.writeText(password)
     }, [password])
+
+    useEffect(() => {
+        passwordGenerator()
+    }, [length, numAllowed, charAllowed, passwordGenerator])
 
     return (
         <>
@@ -60,12 +61,12 @@ export default function PasswordGenerator() {
         </div>
         <h1 className="mx-14  block mt-6 text-sm text-white">Number of characters: {length}</h1>
         <div className="flex items-center mx-14 mt-4">
-            <Slider onChange={(e) => {setLength(e.target.value)}} min={4} max={40} />
+            <Slider value={[length]} onValueChange={([value]) => setLength(value)} min={4} max={40} />
         </div>
         <div className="flex items-center gap-8 mx-14 mt-4">
             <div className="flex items-center gap-2">
                 <input defaultChecked={numAllowed} onChange={() => {setNumAllowed((prev) => !prev)}} className="accent-[#a333ff] cursor-pointer rounded-md h-4 w-4" type="checkbox" />
-                <label className="text-white">0-9</label>
+                <label className="text-white">Numbers</label>
             </div>
             <div className="flex items-center gap-2">
                 <input defaultChecked={charAllowed} onChange={() => {setCharAllowed((prev) => !prev)}} className="accent-[#a333ff] cursor-pointer rounded-md h-4 w-4" type="checkbox" />
