@@ -37,10 +37,10 @@ export default function Home() {
 
         <div className="relative overflow-hidden rounded-lg border border-[#27272a] p-2 text-left hover:border-[#414147] hover:duration-300">
           <div className="flex h-44 flex-col justify-between rounded-md p-6">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-binary"><rect x="14" y="14" width="4" height="6" rx="2"/><rect x="6" y="4" width="4" height="6" rx="2"/><path d="M6 20h4"/><path d="M14 10h4"/><path d="M6 14h2v6"/><path d="M14 4h2v6"/></svg>
               <div className="space-y-2 mt-2">
-                <h3 className="font-bold text-white ">Write Notes</h3>
-                <p className="text-gray-400">Write and retrive your notes efficiently using write notes</p>
+                <h3 className="font-bold text-white ">Binary Code</h3>
+                <p className="text-gray-400">Encode and Decode text using binary code</p>
               </div>
           </div>
         </div>
