@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 
 import { GeistSans } from 'geist/font/sans';
@@ -10,7 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <body className={GeistSans.className}>
+        {children}
+      <Analytics />
+      </body>
     </html>
   );
 }
